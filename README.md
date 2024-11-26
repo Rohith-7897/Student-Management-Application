@@ -11,26 +11,35 @@ Update Student Details:
 Enables modifications to existing student records.
 Delete Student Records:
 Facilitates the removal of a student's record using their unique ID.
+
 Technologies Used:
+
 Backend Framework: Spring Boot
 Data Persistence: JPA (Java Persistence API) with Hibernate
 Database: Integrated using JPA Repository (supports MySQL, PostgreSQL, etc.)
+
 Annotations:
 @Entity, @Id for defining data models.
 @RestController, @Autowired for RESTful APIs and dependency injection.
 @RequestMapping, @PostMapping, @GetMapping, etc., for routing and HTTP method handling.
-Dependency Management: Maven/Gradle
+Dependency Management: Maven
+
 Key Components:
+
 Controller:
 Provides REST endpoints for client interactions (/api/Student, /api/Students).
 Handles HTTP requests such as GET, POST, PUT, and DELETE.
+
 Service Layer:
 Encapsulates business logic for student management.
 Implements a clean interface for CRUD operations.
+
 DAO Layer:
 Interfaces with the database using JpaRepository for persistence operations.
+
 Data Model:
 Defines a Student entity with fields like id, name, email, etc.
+
 Use Cases:
 Manage student information for schools, colleges, or coaching centers.
 Enhance scalability with the ability to extend functionality, such as integrating authentication or advanced filtering.
